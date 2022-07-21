@@ -10,6 +10,8 @@ export default class SignIn extends Component {
 	render() {
 		const onFinish = values => {
 			console.log('Success:', values);
+			if (values.email === 'admin')
+				return localStorage.setItem('user', JSON.stringify(values));
 		};
 
 		const onFinishFailed = errorInfo => {
