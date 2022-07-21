@@ -40,6 +40,14 @@ function Sidenav({ color }) {
 						</NavLink>
 					</Menu.Item>
 				))}
+				<p
+					onClick={() => {
+						localStorage.removeItem('user');
+					}}
+					style={{ textAlign: 'center', cursor: 'pointer', marginTop: '2rem' }}
+				>
+					<strong>Logout</strong>
+				</p>
 			</Menu>
 		</>
 	);
