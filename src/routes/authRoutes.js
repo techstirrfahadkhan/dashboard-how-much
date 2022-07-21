@@ -1,5 +1,7 @@
 import SignIn from '../pages/SignIn';
 import SignUp from '../pages/SignUp';
+import Privacy from '../pages/privacyPolicy';
+
 const authRoutes = [
 	{
 		path: '/login',
@@ -11,6 +13,12 @@ const authRoutes = [
 		path: '/signup',
 		name: 'Signup',
 		component: SignUp,
+		layout: '/auth',
+	},
+	{
+		path: '/privacy',
+		name: 'Privacy',
+		component: Privacy,
 		layout: '/auth',
 	},
 ];
