@@ -2,7 +2,7 @@
 	"name": "how-much-dasboard",
 	"version": "1.0.0",
 	"private": true,
-	"homepage": "https://techstirrfahadkhan.github.io",
+	"homepage": "https://techstirrfahadkhan.github.io/dashboard-how-much.git",
 	"dependencies": {
 		"@ant-design/icons": "^4.7.0",
 		"@apollo/client": "^3.6.8",
