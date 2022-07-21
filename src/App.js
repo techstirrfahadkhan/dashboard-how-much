@@ -16,8 +16,8 @@ function App() {
 		<div className='App'>
 			<ApolloProvider client={client}>
 				<Switch>
-					{0 ? <Admin /> : <Auth />}
-					<Redirect from='/' to='/admin/dashboard' />
+					{1 ? <Admin /> : <Auth />}
+					<Redirect from='/' to='/admin/products' />
 				</Switch>
 			</ApolloProvider>
 		</div>

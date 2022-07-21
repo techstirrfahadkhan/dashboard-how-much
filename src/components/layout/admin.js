@@ -31,7 +31,7 @@ const Admin = () => {
 				<Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
 					<Switch>
 						{getRoutes(adminRoutes)}
-						<Redirect from='*' to='/admin/dashboard' />
+						<Redirect from='*' to='/admin/products' />
 					</Switch>
 				</Content>
 			</Layout>
