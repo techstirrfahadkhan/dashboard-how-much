@@ -2,8 +2,12 @@
 import { Menu } from 'antd';
 import { NavLink, useLocation } from 'react-router-dom';
 import adminRoutes from '../../routes/adminRoutes';
+import { UserContext } from '../../context/userContext';
+import { useContext } from 'react';
 
 function Sidenav({ color }) {
+	const { setUser } = useContext(UserContext);
+
 	const { pathname } = useLocation();
 	const page = pathname.replace('/', '');
 	let active = '0';
@@ -42,6 +46,7 @@ function Sidenav({ color }) {
 				))}
 				<p
 					onClick={() => {
+						setUser({});
 						localStorage.removeItem('user');
 					}}
 					style={{ textAlign: 'center', cursor: 'pointer', marginTop: '2rem' }}
