@@ -1,5 +1,0 @@
-//! LIFE CYCLE METHODS
-
-//! QURIES
-
-//!QUERY
